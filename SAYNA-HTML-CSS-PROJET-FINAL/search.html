@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Projet Final</title>
+</head>
+
+<body>
+    <!-- **************************Header********************* -->
+    <header>
+        <nav class=" container-fluid">
+            <div class="container-fluid py-1">
+                <div class="row align-items-center justify-content-between ">
+                    <div class="col-lg-6 navleft">
+                        <a class="nav-link fs-4 text-white text-center text-lg-start" href="index.html"><img src="assets/Images/group-2.svg" alt="#" width="100 ">[Events]</a>
+                    </div>
+                    <div class="col text-lg-end py-1">
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-lg-end">
+                                <a class="nav-link text-white " href="search.html"><i class="fa-solid fa-magnifying-glass px-2"></i>Search</a>
+                            </li>
+                            <li class="list-inline-item text-lg-end">
+                                <a class="nav-link text-white" href="about.html"><i class="fa-solid fa-user-tie px-2"></i>About</a>
+                            </li>
+                            <li class="list-inline-item text-lg-end">
+                                <a class="nav-link text-white " href="#"><i class="fa-solid fa-rss px-2"></i>Blog</a>
+                            </li>
+                            <li class="list-inline-item text-lg-end">
+                                <a class="nav-link text-white " href="#"><i class="fa-solid fa-bars px-2"></i>More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- **************************Formulaire******************* -->
+    <section>
+        <div class="container-fluid search-form-bg location mt-5">
+            <div class="container ">
+                <div class="row ">
+                    <p class="text-center pt-5 fs-3 fw-bold text-secondary">Filter by location, host,subject, date, daytime:</p>
+                    <div class="col-lg mx-2 col-sm-12">
+                        <div class="row">
+                            <label class="fw-bold" for="Location">Location</label>
+
+                            <input type="text" id="location" name="location" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg mx-2 col-sm-12">
+                        <div class="row">
+                            <label class="fw-bold" for="Host">Host</label>
+
+                            <input type="text" id="host" name="host" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg col-sm-6 mx-2">
+                        <div class="row">
+                            <label class="fw-bold" for="Subject">Subject</label>
+
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col mx-2">
+                        <div class="row">
+                            <label class="fw-bold" for="InitialDate">Initial Date</label>
+                            <input type="date" id="InitialDate" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col mx-2">
+                        <div class="row">
+                            <label class="fw-bold" for="FinalDate">Final Date</label>
+                            <input type="date" id="FinalDate" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col mx-2">
+                        <div class="row">
+                            <label class="fw-bold" for="DaytimeSelect">Daytime</label>
+                            <select class="form-select" id="DaytimeSelect">
+                                <option selected>Choose...</option>
+                                <option value="Day">Day</option>
+                                <option value="Night">Night</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-sm-1 mx-2">
+                        <div class="row py-4">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 container mx-2 col-sm-1">
+                        <div class="row py-4">
+                            <button type="reset" value="Reset" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Clear Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- *******************galerie******************** -->
+        <div class="container-fluid ">
+            <div class="container pb-5 text-center ">
+                <div class="row ">
+                    <h3 class="p-5 text-center titlegallery td-none ">Search Result Found 7 <a href="search.html " class="td-none ">[Events]</a> Nearby.</h3>
+                </div>
+                <div class="container ">
+                    <div class="row text-sm-center ">
+                        <div class="col-lg col-12 gallery-item m-2" style="background-color: #d35649; ">
+                            <a class="text-decoration-none" href="./about.html">
+                                <p class="columns fw-bolder text-white ">Go to [gathering] example</p>
+                                <img class="img-fluid" src="./Assets/Images/group-2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg col-12 gallery-item m-2" style="background-color: #d35649; ">
+                            <a class="text-decoration-none" href="./about.html">
+                                <p class="columns fw-bolder text-white ">Go to [gathering] example</p>
+                                <img class="img-fluid" src="./Assets/Images/group-2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg col-12 gallery-item m-2" style="background-color: #d35649; ">
+                            <a class="text-decoration-none" href="./about.html">
+                                <p class="columns fw-bolder text-white ">Go to [gathering] example</p>
+                                <img class="img-fluid" src="./Assets/Images/group-2.svg" alt="#">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="mx-auto ">
+        <!-- ********************************************************FOOTER DISPLAY NONE SUR MOBILE****************************************************** -->
+        <section id="footer " class="footer-top text-white d-none d-lg-block ">
+            <div class="container ">
+                <div class="row align-items-center text-center mx-auto fs-4 fw-bold py-5 ">
+
+                    <div class="col border-top border-bottom ms-5 ">
+                        <ul class="list-inline fs-5 ">
+                            <li class="list-inline-item px-2 ">
+                                <a class="text-decoration-none text-white nav-links " href="./index.html ">HOME</a>
+                            </li>
+                            <li class="list-inline-item px-2 ">
+                                <a class="text-decoration-none text-white nav-links " href="./search.html ">SEARCH</a>
+                            </li>
+                            <li class="list-inline-item px-2 ">
+                                <a class="text-decoration-none text-white nav-links " href="./about.html ">ABOUT US</a>
+                            </li>
+                            <li class="list-inline-item px-2 ">
+                                <a class="text-decoration-none text-white nav-links " href="./index.html ">ADVERTISE</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-1 ">
+                        <a href="./search.html "><img class="img-fluid rounded-circle border border-light nav-links " src="./Assets/Icones/mapsnavbar_icon_white.svg " alt=" "></a>
+                    </div>
+
+                    <div class="col border-top border-bottom me-5 ">
+                        <ul class="list-inline fs-5 ">
+                            <li class="list-inline-item px-2 ">
+                                <a class="text-decoration-none text-white nav-links " href="./index.html ">FACEBOOK</a>
+                            </li>
+                            <li class="list-inline-item px-2 ">
+                                <a class="text-decoration-none text-white nav-links " href="./index.html ">TWITTER</a>
+                            </li>
+                            <li class="list-inline-item px-2 ">
+                                <a class="text-decoration-none text-white nav-links " href="./index.html ">INSTAGRAM</a>
+                            </li>
+                            <li class="list-inline-item px-2 ">
+                                <a class="text-decoration-none text-white nav-links " href="./index.html ">BLOG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid footer-top text-center text-white d-none d-lg-block px-3 py-5 ">
+            <div class="row ">
+                <div class="row ">
+                    <div class="col-3 offset-1 ">
+                        <h5 class="pb-3 fw-bold ">Subscribe</h5>
+                        <div class="row ">
+                            <input class="col form-control dark-bg border-end-0 w-auto " type="email " placeholder="Insert your e-mail here " name="email " id=" ">
+                            <button class="text-white fw-bold rounded-3 btn btn-secondary w-25 " type="submit ">Send</button>
+                        </div>
+
+                    </div>
+                    <div class="col-2 offset-1 footer-col ">
+                        <h5 class="pb-3 fw-bold ">Contact</h5>
+                        <p>Have a question or a suggestion?</p>
+                        <a href="mailto:contact@events.com?subject=Ask Me Anything " class="orange text-decoration-none ">contact@events.com</a>
+                    </div>
+                    <div class="col-4 offset-1 footer-col ">
+                        <h5 class="pb-3 fw-bold ">About</h5>
+                        <p>[Events] is an online platform that works to improve and increase social life conections, when this nightmare that we are curently living in is over <a href="./about.html " class="orange text-decoration-none ">learn more.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********************************************************FOOTER DISPLAY NONE SUR MOBILE FIN****************************************************** -->
+        <section class="container-fluid copyright ">
+            <div class="row text-white align-items-center ">
+                <div class="col-6 footer-icons ">
+                    <a class="btn btn-link p-2 footer-icons " href="# "><i class="fa-brands fa-facebook-square "></i></a>
+                    <a class="btn btn-link p-2 footer-icons " href="# "><i class="fa-brands fa-twitter "></i></a>
+                    <a class="btn btn-link p-2 footer-icons " href="# "><i class="fa-brands fa-instagram "></i></a>
+                    <a class="btn btn-link p-2 footer-icons " href="# "><i class="fa-brands fa-tumblr "></i></a>
+                    <a class="btn btn-link p-2 footer-icons " href="# "><i class="fa-brands fa-linkedin "></i></a>
+                </div>
+                <div class="col-6 small text-end ">
+                    <p>&copy;2022 [Events], Inc. All rights reserved</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+
+
+</html>
